@@ -14,7 +14,7 @@ public class Keyboard extends JPanel implements ActionListener {
     public JButton[] fButtons = new JButton[10];
     public JButton dodaj, odejmij, pomnoz, podziel, procent, pierwiastek, potega;
     public JButton przecinek, rowne, wyczysc;
-    public char operator;
+    public char operator,operator2;
     private Frame parent;
 
     public Keyboard(Frame parent) {

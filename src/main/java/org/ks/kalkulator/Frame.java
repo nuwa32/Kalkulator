@@ -52,6 +52,9 @@ public class Frame extends JFrame implements ActionListener {
             keyboard.operator = '/';
             display.label.setText("");
         }
+        if (e.getSource() == keyboard.procent){
+            keyboard.operator2 = '%';
+        }
         if (e.getSource() == keyboard.rowne) {
             if (keyboard.operator == '^') {
                 display.num1 = Double.parseDouble(display.label.getText());
@@ -61,7 +64,9 @@ public class Frame extends JFrame implements ActionListener {
                 display.result = Math.sqrt(display.num1);
             } else {
                 display.num2 = Double.parseDouble(display.label.getText());
-
+                if(keyboard.operator2 == '%'){
+                    display.num2 = ((display.num2/100)*(display.num1));
+                }
                 switch (keyboard.operator) {
                     case '+':
                         display.result = display.num1 + display.num2;
@@ -85,11 +90,6 @@ public class Frame extends JFrame implements ActionListener {
         }
         if (e.getSource() == keyboard.potega) {
             keyboard.operator = '^';
-        }
-        if (e.getSource() == keyboard.procent){
-            display.num2 = Double.parseDouble(display.label.getText());
-            keyboard.operator = '%';
-            display.num2 = (display.num2/100)*(display.num1);
         }
         if (e.getSource() == keyboard.wyczysc) {
             display.label.setText("");
