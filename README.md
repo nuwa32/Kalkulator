@@ -24,7 +24,7 @@ Przycisk C czyści kalkulator i resetuje flagi.
 
 ![img.png](img.png)
 
-Aby uruchomić program należy pobrać zawartość gita. Następnie należy uruchomić plik Kalkulator.jar który znajduje się w folderze Kalkulator_jar. Program możemy też uruchomić z posiomu konsoli używając komendy java -jar i po spacji podajemy pełną ścieżkę do pliku.
+Aby uruchomić program należy pobrać zawartość gita. Następnie należy uruchomić plik Kalkulator.jar który znajduje się w folderze Kalkulator_jar. Program możemy też uruchomić z poziomu konsoli używając komendy java -jar i po spacji podajemy pełną ścieżkę do pliku.
 
 Krótka instrukcja obsługi:
 
