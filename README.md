@@ -32,7 +32,7 @@ Krótka instrukcja obsługi:
 
 2.Wybieramy operator 
 
-3.Wprowadzamy drugą liczbę
+3.Wprowadzamy drugą liczbę(jeśli chcemy aby druga liczba była procentem z pierwszej liczby to po jej wprowadzeniu należy kliknąć przycisk "%")
 
 4.Klikamy przycisk "="
 
