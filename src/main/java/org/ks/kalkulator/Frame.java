@@ -72,7 +72,7 @@ public class Frame extends JFrame implements ActionListener {
             if (keyboard.operator == '^') {
                 display.num1 = Double.parseDouble(display.label.getText());
                 display.result = display.num1 * display.num1;
-                display.label.setText(String.valueOf(display.num1)+keyboard.operator+display.num1+"="+display.result);
+                display.label.setText(String.valueOf(display.num1)+keyboard.operator+"2="+display.result);
             } else if (keyboard.operator == '√') {
                 display.num1 = Double.parseDouble(display.label.getText());
                 display.result = Math.sqrt(display.num1);
@@ -113,6 +113,7 @@ public class Frame extends JFrame implements ActionListener {
         }
         if (e.getSource() == keyboard.wyczysc) {
             flag = 0;
+            minFlag = 0;
             display.num2 = 0;
             display.num1 = 0;
             display.result = 0;
